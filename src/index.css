@@ -197,7 +197,7 @@ form {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .above-fold {
     min-height: 90dvh;
   }
