@@ -19,7 +19,7 @@ function Home() {
     <>
       <Container>
         <Row className="above-fold flex-md-row-reverse flex-centered pb-4 pb-md-0">
-          <Col className="img-container p-md-0 mb-4 mb-lg-0" md={4} lg={5}>
+          <Col className="img-container p-md-0 mb-4" md={4} lg={5}>
             <img
               src="./static/img/foto_atardecer.jpeg"
               alt="Imagen de la planta TSP Agro"
