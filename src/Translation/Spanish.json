@@ -1,0 +1,67 @@
+{
+  "navlink1": "Nosotros",
+  "navlink2": "Servicios",
+  "navlink3": "Valores",
+  "navlink4": "Contacto",
+
+  "whatsapp-button": "Enviar mensaje",
+
+  "hero-subtitle": "INGENIERÍA COMERCIAL EN ACCIÓN",
+  "hero-cta": "Explorar nuestros servicios",
+
+  "banner-heading": "TSP Agro S.A.",
+  "banner-text": " | Operación industrial y servicios para la cadena del girasol en La Pampa",
+
+  "work-title": "Qué hacemos",
+  "work-text": "Trabajamos desde La Pampa con foco en la operación industrial y en la coordinación de servicios vinculados a la producción de girasol. Nuestro objetivo es operar con orden, continuidad y previsibilidad para productores y contrapartes.",
+
+  "values-title": "Valores",
+
+  "work-1-heading": "Cumplimiento",
+  "work-2-heading": "Transparencia",
+  "work-3-heading": "Continuidad",
+  "work-4-heading": "Seguridad",
+  "work-5-heading": "Proyección",
+
+  "work-1-description": "Descripción",
+  "work-2-description": "Descripción",
+  "work-3-description": "Descripción",
+  "work-4-description": "Descripción",
+  "work-5-description": "Trabajos de largo plazo",
+
+  "services-title": "Servicios",
+  "service-1-heading": "Servicios industriales / Fasón",
+  "service-2-heading": "Elaboración de subproductos",
+  "service-3-heading": "Coordinación operativa",
+  "service-1-description": "Según disponibilidad operativa",
+  "service-2-description": "Expulsor / Pellet",
+  "service-3-description": "Planificación y organización",  
+  
+  "mission-title": "Nuestra misión",
+  "mission-text": "Desarrollar el negocio del girasol junto al Productor, brindándole opcionalidad de mercados e ingeniería comercial para maximizar su rentabilidad y potenciar su crecimiento.",
+
+  "how-title": "Cómo trabajamos",
+  "how-text": "Procesos claros, comunicación directa y acuerdos simples. Priorizamos el cumplimiento, la trazabilidad y la continuidad operativa.",
+
+  "vision-title": "Visión",
+  "vision-text": "Buscamos ser protagonistas en la transformación de la cadena de valor del girasol, ofreciendo servicios de calidad a productores y clientes finales.",
+
+  "where": "Dónde operamos",
+
+  "contact": "Contacto",
+
+  "control-input-1-label": "Nombre y apellido",
+  "control-input-1-placeholder": "Juan Pérez",
+
+  "control-input-2-label": "Correo electrónico",
+  "control-input-2-placeholder": "juanperez@mail.com",
+ 
+  "control-input-3-label": "Teléfono (opcional)",
+  "control-input-3-placeholder": "Incluir código de área",
+ 
+  "control-input-4-label": "CUIT (opcional)",
+  "control-input-4-placeholder": "Sin guiones",
+
+  "submit-text": "Quiero que me contacten"
+
+}

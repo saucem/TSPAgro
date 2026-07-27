@@ -1,0 +1,67 @@
+{
+  "navlink1": "About Us",
+  "navlink2": "Services",
+  "navlink3": "Our Values",
+  "navlink4": "Contact",
+ 
+  "whatsapp-button": "Send message",
+
+  "hero-subtitle": "COMMERCIAL ENGINEERING IN ACTION",
+  "hero-cta": "Explore our services",
+
+  "banner-heading": "TSP Agro S.A.",
+  "banner-text": " | Industrial operation and services for the sunflower chain in La Pampa",
+
+  "work-title": "What we do",
+  "work-text": "We operate from La Pampa, focusing on industrial operations and coordinating services related to sunflower production. Our goal is to operate with order, continuity, and predictability for both producers and our partners.",
+  
+  "values-title": "Values",
+
+  "work-1-heading": "Compliance",
+  "work-2-heading": "Transparency",
+  "work-3-heading": "Continuity",
+  "work-4-heading": "Security",
+  "work-5-heading": "Projection",
+
+  "work-1-description": "Description",
+  "work-2-description": "Description",
+  "work-3-description": "Description",
+  "work-4-description": "Description",
+  "work-5-description": "Long term jobs",
+
+  "services-title": "Services",
+  "service-1-heading": "Industrial Services / Contract Manufacturing",
+  "service-2-heading": "Processing of By-products",
+  "service-3-heading": "Operational Coordination",
+  "service-1-description": "Subject to operational availability",
+  "service-2-description": "Expeller / Pellet",
+  "service-3-description": "Planning and Organization",
+
+  "mission-title": "Our mission",
+  "mission-text": "Develop the sunflower business together with the Producer, providing them with market options and commercial engineering to maximize their profitability and boost their growth.",
+
+  "how-title": "How we work",
+  "how-text": "Clear processes, direct communication, and simple agreements. We prioritize compliance, traceability, and operational continuity.",
+
+  "vision-title": "Vision",
+  "vision-text": "We aim to be key players in the transformation of the sunflower value chain, offering quality services to producers and end customers.",
+
+  "where": "Where we operate",
+
+  "contact": "Contact",
+
+  "control-input-1-label": "Full name",
+  "control-input-1-placeholder": "John Doe",
+
+  "control-input-2-label": "Email",
+  "control-input-2-placeholder": "johndoe@mail.com",
+ 
+  "control-input-3-label": "Phone number (optional)",
+  "control-input-3-placeholder": "Include area code",
+ 
+  "control-input-4-label": "CUIT (optional)",
+  "control-input-4-placeholder": "Numbers only",
+
+  "submit-text": "I want them to contact me"
+
+}
