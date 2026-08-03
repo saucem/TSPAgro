@@ -56,7 +56,7 @@ function Home() {
         </Row>
       </Container>
       <Container className="d-flex flex-column flex-centered py-4" id="work">
-        <Row className="flex-centered gap-2 mb-4 mb-lg-0">
+        <Row className="flex-centered gap-4 my-4 py-lg-4">
           <Col className="img-container h-25 p-md-0" lg={6}>
             <img
               src="./static/img/horsemen.png"
@@ -71,7 +71,7 @@ function Home() {
             <p className="h5">{t("work-text")}</p>
           </Col>
         </Row>
-        <Container className="d-flex flex-column flex-centered hmin-30 gap-5" id="values">
+        <Container className="d-flex flex-column flex-centered hmin-30 gap-5 my-4" id="values">
           <h2 className="fw-bold text-primary-custom h1">
             {t("values-title")}
           </h2>
@@ -149,7 +149,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Container className="d-flex flex-column flex-centered" id="services">
+      <Container className="d-flex flex-column flex-centered my-4 py-lg-4" id="services">
         <h2 className="fw-bold text-primary-custom text-center h1 my-4">
           {t("services-title")}
         </h2>
@@ -195,7 +195,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="d-flex flex-column flex-centered hmin-30">
+      <Container className="d-flex flex-column flex-centered hmin-30 my-4 py-lg-4">
         <h2 className="fw-bold text-primary-custom text-center h1 my-4">
           {t("mission-title")}
         </h2>
@@ -222,7 +222,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="d-flex flex-column flex-centered hmin-20 mb-4">
+      <Container className="d-flex flex-column flex-centered hmin-20 my-4 py-lg-4">
         <h2 className="fw-bold text-primary-custom text-center h1 mb-4">
           {t("vision-title")}
         </h2>
@@ -232,7 +232,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="mb-4" id="contact">
+      <Container className="my-4 py-lg-4" id="contact">
         <Row className="justify-content-center flex-lg-row-reverse" xs={1} lg={2}>
           <Col className="mb-4 mb-lg-0 h-100">
             <h2 className="fw-bold text-primary-custom h1">{t("contact")}</h2>
@@ -266,7 +266,7 @@ function Home() {
           </Col>
           <Col className="h-100">
             <h2 className="fw-bold text-primary-custom h1">{t("where")}</h2>
-            <div className="iframe-container">
+            <div className="iframe-container ratio ratio-16x9">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7950577740926!2d-63.78451752350696!3d-35.68204797258698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c363083c2fb407%3A0x8305d40357268c69!2sTSP%20AGRO%20SA!5e0!3m2!1ses!2sar!4v1785110800036!5m2!1ses!2sar"
                 className="w-100 hmin-40 rounded-3"

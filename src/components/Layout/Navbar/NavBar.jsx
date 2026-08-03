@@ -26,6 +26,7 @@ function NavBar() {
             <Link to={"#services"} className="nav-link">{t("navlink2")}</Link>
             <Link to={"#values"} className="nav-link">{t("navlink3")}</Link>
             <Link to={"#contact"} className="nav-link">{t("navlink4")}</Link>
+            <div className="vr d-none d-lg-block mx-1" />
             <LanguageSelect />
           </Nav>
         </Navbar.Collapse>
