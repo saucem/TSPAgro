@@ -62,6 +62,8 @@
   "control-input-4-label": "CUIT (opcional)",
   "control-input-4-placeholder": "Sin guiones",
 
-  "submit-text": "Quiero que me contacten"
+  "submit-text": "Quiero que me contacten",
+
+  "designer-text": "Diseño"
 
 }

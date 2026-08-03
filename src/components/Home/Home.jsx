@@ -86,6 +86,7 @@ function Home() {
                 src="./static/img/check_circle.svg"
                 alt={t("work-1-heading")}
                 width={64}
+                className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-1-heading")}</h3>
               <p className="text-small">{t("work-1-description")}</p>
@@ -100,6 +101,7 @@ function Home() {
                 src="./static/img/mistery.svg"
                 alt={t("work-2-heading")}
                 width={64}
+                className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-2-heading")}</h3>
               <p className="text-small">{t("work-2-description")}</p>
@@ -114,6 +116,7 @@ function Home() {
                 src="./static/img/conversion_path.svg"
                 alt={t("work-3-heading")}
                 width={64}
+                className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-3-heading")}</h3>
               <p className="text-small">{t("work-3-description")}</p>
@@ -128,6 +131,7 @@ function Home() {
                 src="./static/img/verified_user.svg"
                 alt={t("work-4-heading")}
                 width={64}
+                className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-4-heading")}</h3>
               <p className="text-small">{t("work-4-description")}</p>
@@ -142,6 +146,7 @@ function Home() {
                 src="./static/img/trending_up.svg"
                 alt={t("work-5-heading")}
                 width={64}
+                className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-5-heading")}</h3>
               <p className="text-small">{t("work-5-description")}</p>

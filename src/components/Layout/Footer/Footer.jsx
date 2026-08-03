@@ -30,7 +30,7 @@ function Footer() {
             </Nav>
           </Col>
         </Row>
-        <h6 className="text-center text-success">&copy; TSP Agro 2026 - Diseño: <a href="" className="text-link">Saucem</a></h6>
+        <h6 className="text-center text-success">&copy; TSP Agro 2026 - {t("designer-text")}: <a href="" className="text-link">saucem</a></h6>
       </Container>
     </Container>
   )

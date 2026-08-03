@@ -9,8 +9,10 @@
   --bs-body-color: var(--dark);
   --text: var(--dark);
   --text-h: var(--dark-h);
+  --text-heading: var(--primary);
   --bs-body-bg: var(--light);
   --bs-navbar-brand-color: var(--dark);
+  --bs-nabvar-color: var(--primary);
   --bs-emphasis-color-rgb: rgba(34, 36, 40, 1);
   --bs-font-sans-serif: "DM Sans", system-ui, "Segoe UI", Roboto, sans-serif;
   --bs-nav-link-font-size: 16px;
@@ -30,14 +32,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.scheme-variable-image {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(87%) saturate(377%) hue-rotate(126deg) brightness(95%) contrast(87%);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bs-body-color: var(--light);
     --text: var(--light);
     --text-h: var(--light-h);
+    --text-heading: var(--secondary);
     --bs-body-bg: var(--dark);
     --bs-navbar-brand-color: var(--light);
+    --bs-nabvar-color: var(--light);
+    --bs-tertiary-bg: #444;
     --bs-emphasis-color-rgb: rgba(250, 250, 250, 1);
+    --navlink-decoration-color: var(--secondary);
+
+  }
+  .scheme-variable-image{
+    filter: brightness(0) saturate(100%) invert(86%) sepia(12%) saturate(1282%) hue-rotate(79deg) brightness(94%) contrast(94%);
   }
 }
 
@@ -91,7 +105,7 @@ form {
 }
 
 .text-primary-custom {
-  color: var(--primary);
+  color: var(--text-heading);
 }
 
 .text-link {
@@ -107,12 +121,11 @@ form {
 }
 
 .nav-link {
-  color: var(--primary);
   &::after{
     content: " ";
     width: 100%;
     height: 2px;
-    background-color: var(--primary);
+    background-color: var(--text);
     display: block;
     transform: scaleX(0%);
     transition: transform .3s ease;
@@ -192,8 +205,13 @@ form {
 } */
 
 .form-label {
+  color: var(--dark);
   margin-bottom: 0.25rem;
   font-size: 0.9rem;
+}
+
+.form-control {
+  background-color: var(--light);
 }
 
 @media screen and (max-width: 767px) {

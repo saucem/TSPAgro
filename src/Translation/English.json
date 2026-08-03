@@ -62,6 +62,8 @@
   "control-input-4-label": "CUIT (optional)",
   "control-input-4-placeholder": "Numbers only",
 
-  "submit-text": "I want them to contact me"
+  "submit-text": "I want them to contact me",
+
+  "designer-text": "Design"
 
 }
