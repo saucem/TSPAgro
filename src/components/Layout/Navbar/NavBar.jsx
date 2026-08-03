@@ -19,7 +19,7 @@ function NavBar() {
           <img src="/static/img/logo.svg" alt="Logo" width={32}/>
           <img src="/static/img/isotipo.svg" alt="Logo" width={128}/>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="scheme-variable-image" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="align-items-center">
             <Link to={"#work"} className="nav-link">{t("navlink1")}</Link>
