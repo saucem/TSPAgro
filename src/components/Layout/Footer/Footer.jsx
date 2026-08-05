@@ -16,7 +16,7 @@ function Footer() {
             <img src="/static/img/isotipo_light.svg" alt="Logo" width={192}/>          
           </Col>
           <Col>
-            <p><BsEnvelope className="me-2 align-middle"/>info@tspagro.com.ar</p>
+            <p><BsEnvelope className="me-2 align-middle"/>info@tsp-agro.com</p>
             <p className="d-none d-md-block"><BsWhatsapp className="me-2 align-middle"/><a href="https://wa.me/+5492302618307" className="text-light text-link">+54 9 2302 61-8307</a></p>
             <p><BsGeoAlt className="me-2 align-middle"/><a href="https://maps.app.goo.gl/JSR9FEP3kFUnh4uWA" className="text-light text-link">Parque Industrial Gral. Pico, La Pampa</a></p>
             <Button className="d-block d-md-none btn btn-success"><BsWhatsapp className="me-2 align-middle"/>{t("whatsapp-button")}</Button>

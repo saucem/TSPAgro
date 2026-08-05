@@ -16,7 +16,7 @@
   --bs-emphasis-color-rgb: rgba(34, 36, 40, 1);
   --bs-font-sans-serif: "DM Sans", system-ui, "Segoe UI", Roboto, sans-serif;
   --bs-nav-link-font-size: 16px;
-  --bs-navbar-toggler-focus-width:0.1rem;
+  --bs-navbar-toggler-focus-width: 0.1rem;
 
   --sans: "DM Sans", system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: "DM Sans", system-ui, "Segoe UI", Roboto, sans-serif;
@@ -34,7 +34,8 @@
 }
 
 .scheme-variable-image {
-  filter: brightness(0) saturate(100%) invert(24%) sepia(87%) saturate(377%) hue-rotate(126deg) brightness(95%) contrast(87%);
+  filter: brightness(0) saturate(100%) invert(24%) sepia(87%) saturate(377%)
+    hue-rotate(126deg) brightness(95%) contrast(87%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,10 +50,10 @@
     --bs-tertiary-bg: #444;
     --bs-emphasis-color-rgb: rgba(250, 250, 250, 1);
     --navlink-decoration-color: var(--secondary);
-
   }
-  .scheme-variable-image{
-    filter: brightness(0) saturate(100%) invert(86%) sepia(12%) saturate(1282%) hue-rotate(79deg) brightness(94%) contrast(94%);
+  .scheme-variable-image {
+    filter: brightness(0) saturate(100%) invert(86%) sepia(12%) saturate(1282%)
+      hue-rotate(79deg) brightness(94%) contrast(94%);
   }
 }
 
@@ -76,6 +77,10 @@ h2 {
   font-weight: 500;
 }
 
+.h1 {
+  margin-bottom: 1.25rem;
+}
+
 p {
   text-wrap: pretty;
 }
@@ -90,7 +95,7 @@ form {
 
 .hero-subtitle {
   letter-spacing: 10%;
-  font-size: clamp(none, 3.65vw, 14px);
+  font-size: clamp(10px, 3dvw, 16px);
 }
 
 .bg-primary-custom {
@@ -117,24 +122,45 @@ form {
   }
 }
 
+.callout {
+  padding: 1rem;
+  border-left: solid 5px var(--text-heading);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  &.callout-primary {
+    border-color: var(--bs-primary);
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+  }
+  &.callout-secondary {
+    border-color: var(--bs-secondary);
+    background-color: rgba(var(--bs-secondary-rgb), 0.1);
+  }
+  &.callout-success {
+    border-color: var(--bs-success);
+    background-color: rgba(var(--bs-success-rgb), 0.1);
+  }
+}
+
 .navbar {
   min-height: 10dvh;
 }
 
 .nav-link {
-  &::after{
+  &::after {
     content: " ";
     width: 100%;
     height: 2px;
     background-color: var(--text);
     display: block;
     transform: scaleX(0%);
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
   }
-  &.no-hover-effect::after{
+  &.no-hover-effect::after {
     display: none;
   }
-  &:hover::after{transform: scaleX(100%);}
+  &:hover::after {
+    transform: scaleX(100%);
+  }
 }
 
 .hmin-10 {
@@ -197,14 +223,6 @@ form {
   align-items: center;
 }
 
-/* .hero-logo {
-  width: clamp(none, 90%, 340px);
-} */
-
-/* .hero-image {
-  width: clamp(none, 90%, 500px);
-} */
-
 .form-label {
   color: var(--dark);
   margin-bottom: 0.25rem;
@@ -217,16 +235,17 @@ form {
 
 @media screen and (max-width: 767px) {
   .above-fold {
-    min-height: 75dvh;
+    min-height: 70dvh;
   }
-  .hero-logo{
-    max-width: 128px;
+  .hero-logo {
+    width: 75%;
+    max-width: 300px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .above-fold {
-    min-height: 80dvh;
+    min-height: 90dvh;
   }
   .hero-logo {
     max-width: 80%;
@@ -238,7 +257,7 @@ form {
     min-height: 90dvh;
   }
   .hero-logo {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
@@ -250,39 +269,39 @@ form {
     max-width: 100%;
   }
   .hmin-10 {
-  min-height: 5dvh;
-}
-.hmin-20 {
-  min-height: 10dvh;
-}
-.hmin-25 {
-  min-height: 12.5dvh;
-}
-.hmin-30 {
-  min-height: 15dvh;
-}
-.hmin-40 {
-  min-height: 20dvh;
-}
-.hmin-50 {
-  min-height: 25dvh;
-}
-.hmin-60 {
-  min-height: 30dvh;
-}
-.hmin-70 {
-  min-height: 35dvh;
-}
-.hmin-75 {
-  min-height: 37.5dvh;
-}
-.hmin-80 {
-  min-height: 40dvh;
-}
-.hmin-90 {
-  min-height: 45dvh;
-}
-.hmin-100 {
-  min-height: 50dvh;
-}
+    min-height: 5dvh;
+  }
+  .hmin-20 {
+    min-height: 10dvh;
+  }
+  .hmin-25 {
+    min-height: 12.5dvh;
+  }
+  .hmin-30 {
+    min-height: 15dvh;
+  }
+  .hmin-40 {
+    min-height: 20dvh;
+  }
+  .hmin-50 {
+    min-height: 25dvh;
+  }
+  .hmin-60 {
+    min-height: 30dvh;
+  }
+  .hmin-70 {
+    min-height: 35dvh;
+  }
+  .hmin-75 {
+    min-height: 37.5dvh;
+  }
+  .hmin-80 {
+    min-height: 40dvh;
+  }
+  .hmin-90 {
+    min-height: 45dvh;
+  }
+  .hmin-100 {
+    min-height: 50dvh;
+  }
 }

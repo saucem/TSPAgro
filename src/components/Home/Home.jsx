@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguageContext } from "../../context/languageContext";
-import { HashLink as Link } from "react-router-hash-link"
+import { HashLink as Link } from "react-router-hash-link";
+import Callout from "../Callout/Callout";
 import {
   Container,
   Row,
@@ -19,19 +20,18 @@ function Home() {
     <>
       <Container>
         <Row className="above-fold flex-md-row-reverse flex-centered pb-4 pb-md-0">
-          <Col className="img-container p-md-0 mb-5" md={4} lg={5}>
+          <Col className="img-container p-md-0 mb-5" lg={7}>
             <img
-              src="./static/img/foto_atardecer.jpeg"
-              alt="Imagen de la planta TSP Agro"
+              src="./static/img/hero-sunflower-sunset.png"
+              alt={t("hero-image-alt")}
               className="rounded-3 rounded-lg-0"
             />
           </Col>
           <Col
-            md={6}
-            lg={6}
+            lg={5}
             className="d-flex flex-column justify-content-center align-items-center gap-3"
           >
-            <div className="d-flex flex-row align-items-end justify-content-between flex-md-column justify-content-md-center align-items-md-center">
+            <div className="d-flex flex-column flex-centered gap-2">
               <img
                 src="./static/img/isologotipo.svg"
                 alt="Logo"
@@ -41,12 +41,14 @@ function Home() {
                 {t("hero-subtitle")}
               </p>
             </div>
-            <Link to={"#services"} className="btn btn-lg btn-success my-4 col-lg-8">{t("hero-cta")}</Link>
+            <Link to={"#services"} className="btn btn-success my-4 col-lg-8">
+              {t("hero-cta")}
+            </Link>
           </Col>
         </Row>
       </Container>
       <Container fluid className="bg-primary-custom text-light">
-        <Row className="py-4">
+        <Row className="flex-centered hmin-20">
           <Col>
             <h1 className="text-center h3">
               <strong>{t("banner-heading")}</strong>
@@ -56,22 +58,25 @@ function Home() {
         </Row>
       </Container>
       <Container className="d-flex flex-column flex-centered py-4" id="work">
-        <Row className="flex-centered gap-4 my-4 py-lg-4">
-          <Col className="img-container h-25 p-md-0" lg={6}>
+        <Row className="flex-centered gap-4 my-4 py-lg-4 hmin-20">
+          <Col className="d-none img-container h-25 p-md-0" lg={6}>
             <img
               src="./static/img/horsemen.png"
               alt=""
               className="rounded-3 rounded-lg-0"
             />
           </Col>
-          <Col lg={5}>
+          <Col lg={8}>
             <h2 className="fw-bold text-primary-custom h1 text-center text-lg-start">
               {t("work-title")}
             </h2>
-            <p className="h5">{t("work-text")}</p>
+            <p className="h5 text-center text-md-start">{t("work-text")}</p>
           </Col>
         </Row>
-        <Container className="d-flex flex-column flex-centered hmin-30 gap-5 my-4" id="values">
+        <Container
+          className="d-flex flex-column flex-centered hmin-30 gap-4 my-4"
+          id="values"
+        >
           <h2 className="fw-bold text-primary-custom h1">
             {t("values-title")}
           </h2>
@@ -154,11 +159,26 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Container className="d-flex flex-column flex-centered my-4 py-lg-4" id="services">
+      <Container
+        className="d-flex flex-column flex-centered my-4 py-lg-4"
+        id="services"
+      >
         <h2 className="fw-bold text-primary-custom text-center h1 my-4">
           {t("services-title")}
         </h2>
-        <Row className="justify-content-center hmin-40 w-100 row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-4">
+
+        <Row className="row-cols-1 row-cols-lg-2 g-3">
+          <Col>
+            <Callout heading={t("service-1-heading")} text="" color="success"></Callout>
+          </Col>
+          <Col>
+            <Callout heading={t("service-2-heading")} text="" color="success"></Callout>
+          </Col>
+          <Col>
+            <Callout heading={t("service-3-heading")} text="" color="success"></Callout>
+          </Col>
+        </Row>
+        {/* <Row className="justify-content-center hmin-40 w-100 row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-4">
           <Col>
             <Card className="rounded-3 h-100">
               <Card.Img
@@ -198,7 +218,7 @@ function Home() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
       <Container className="d-flex flex-column flex-centered hmin-30 my-4 py-lg-4">
         <h2 className="fw-bold text-primary-custom text-center h1 my-4">
@@ -214,7 +234,7 @@ function Home() {
         <Row className="flex-centered flex-lg-row-reverse hmin-50 gap-2 mb-4 mb-lg-0">
           <Col className="img-container h-50 p-md-0" lg={6}>
             <img
-              src="./static/img/trabajando-pico.jpeg"
+              src="./static/img/tsp-staff-containers.jpeg"
               alt=""
               className="rounded-3 rounded-lg-0"
             />
@@ -238,35 +258,55 @@ function Home() {
         </Row>
       </Container>
       <Container className="my-4 py-lg-4" id="contact">
-        <Row className="justify-content-center flex-lg-row-reverse" xs={1} lg={2}>
+        <Row
+          className="justify-content-center flex-lg-row-reverse"
+          xs={1}
+          lg={2}
+        >
           <Col className="mb-4 mb-lg-0 h-100">
             <h2 className="fw-bold text-primary-custom h1">{t("contact")}</h2>
             <Form className="p-3 rounded-3">
               <Form.Group controlId="control-input-1" className="mb-3">
                 <Form.Label>{t("control-input-1-label")}</Form.Label>
-                <Form.Control type="text" name="nombre" placeholder={t("control-input-1-placeholder")} required/>
+                <Form.Control
+                  type="text"
+                  name="nombre"
+                  placeholder={t("control-input-1-placeholder")}
+                  required
+                />
               </Form.Group>
               <Form.Group controlId="control-input-2" className="mb-3">
                 <Form.Label>{t("control-input-2-label")}</Form.Label>
-                <Form.Control type="email" name="email" placeholder={t("control-input-2-placeholder")} required/>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder={t("control-input-2-placeholder")}
+                  required
+                />
               </Form.Group>
               <Row className="mb-3">
                 <Col>
                   <Form.Group controlId="control-input-3">
                     <Form.Label>{t("control-input-3-label")}</Form.Label>
-                    <Form.Control type="text" name="telefono" placeholder={t("control-input-3-placeholder")} />
+                    <Form.Control
+                      type="text"
+                      name="telefono"
+                      placeholder={t("control-input-3-placeholder")}
+                    />
                   </Form.Group>
                 </Col>
                 <Col>
                   <Form.Group controlId="control-input-4">
                     <Form.Label>{t("control-input-4-label")}</Form.Label>
-                    <Form.Control type="text" name="cuit" placeholder={t("control-input-4-placeholder")} />
+                    <Form.Control
+                      type="text"
+                      name="cuit"
+                      placeholder={t("control-input-4-placeholder")}
+                    />
                   </Form.Group>
                 </Col>
               </Row>
-              <Button className="btn-success">
-                {t("submit-text")}
-              </Button>          
+              <Button className="btn-success">{t("submit-text")}</Button>
             </Form>
           </Col>
           <Col className="h-100">
