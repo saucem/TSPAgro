@@ -31,9 +31,12 @@
   "work-5-description": "Long term jobs",
 
   "services-title": "Services",
-  "service-1-heading": "Industrial Services / Contract Manufacturing",
-  "service-2-heading": "Processing of By-products",
-  "service-3-heading": "Operational Coordination",
+  "service-1-heading": "Industrial services / Contract manufacturing",
+  "service-2-heading": "Processing of by-products",
+  "service-3-heading": "Operational coordination",
+  "service-4-heading": "Grain and oilseed stockpiling",
+  "service-5-heading": "Foreign trade",
+  "service-6-heading": "Exchange of supplies",
   "service-1-description": "Subject to operational availability",
   "service-2-description": "Expeller / Pellet",
   "service-3-description": "Planning and Organization",
@@ -64,6 +67,9 @@
   "control-input-4-placeholder": "Numbers only",
 
   "submit-text": "I want them to contact me",
+  
+  "send-success": "Message sent successfully",
+  "send-error": "An error occurred while sending the message",
 
   "designer-text": "Design"
 

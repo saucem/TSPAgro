@@ -12,6 +12,7 @@ import {
   FormControl,
   Card,
 } from "react-bootstrap";
+import ContactForm from "../ContactForm/ContactForm";
 
 function Home() {
   const { t } = useLanguageContext();
@@ -20,11 +21,10 @@ function Home() {
     <>
       <Container>
         <Row className="above-fold flex-md-row-reverse flex-centered pb-4 pb-md-0">
-          <Col className="img-container p-md-0 mb-5" lg={7}>
+          <Col className="img-container p-md-0 mb-5 rounded" lg={7}>
             <img
               src="./static/img/hero-sunflower-sunset.png"
               alt={t("hero-image-alt")}
-              className="rounded-3 rounded-lg-0"
             />
           </Col>
           <Col
@@ -94,7 +94,7 @@ function Home() {
                 className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-1-heading")}</h3>
-              <p className="text-small">{t("work-1-description")}</p>
+              {/* <p className="text-small">{t("work-1-description")}</p> */}
             </Col>
             <Col
               className="d-flex flex-centered flex-column"
@@ -109,7 +109,7 @@ function Home() {
                 className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-2-heading")}</h3>
-              <p className="text-small">{t("work-2-description")}</p>
+              {/* <p className="text-small">{t("work-2-description")}</p> */}
             </Col>
             <Col
               className="d-flex flex-centered flex-column"
@@ -124,7 +124,7 @@ function Home() {
                 className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-3-heading")}</h3>
-              <p className="text-small">{t("work-3-description")}</p>
+              {/* <p className="text-small">{t("work-3-description")}</p> */}
             </Col>
             <Col
               className="d-flex flex-centered flex-column"
@@ -139,7 +139,7 @@ function Home() {
                 className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-4-heading")}</h3>
-              <p className="text-small">{t("work-4-description")}</p>
+              {/* <p className="text-small">{t("work-4-description")}</p> */}
             </Col>
             <Col
               className="d-flex flex-centered flex-column"
@@ -154,7 +154,7 @@ function Home() {
                 className="scheme-variable-image"
               />
               <h3 className="text-primary-custom h4">{t("work-5-heading")}</h3>
-              <p className="text-small">{t("work-5-description")}</p>
+              {/* <p className="text-small">{t("work-5-description")}</p> */}
             </Col>
           </Row>
         </Container>
@@ -167,7 +167,7 @@ function Home() {
           {t("services-title")}
         </h2>
 
-        <Row className="row-cols-1 row-cols-lg-2 g-3">
+        <Row className="row-cols-1 row-cols-lg-2 g-3 w-100">
           <Col>
             <Callout heading={t("service-1-heading")} text="" color="success"></Callout>
           </Col>
@@ -176,6 +176,15 @@ function Home() {
           </Col>
           <Col>
             <Callout heading={t("service-3-heading")} text="" color="success"></Callout>
+          </Col>
+          <Col>
+            <Callout heading={t("service-4-heading")} text="" color="success"></Callout>
+          </Col>
+          <Col>
+            <Callout heading={t("service-5-heading")} text="" color="success"></Callout>
+          </Col>
+          <Col>
+            <Callout heading={t("service-6-heading")} text="" color="success"></Callout>
           </Col>
         </Row>
         {/* <Row className="justify-content-center hmin-40 w-100 row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-4">
@@ -263,58 +272,16 @@ function Home() {
           xs={1}
           lg={2}
         >
-          <Col className="mb-4 mb-lg-0 h-100">
+          <Col className="mb-4 mb-lg-0 d-flex flex-column">
             <h2 className="fw-bold text-primary-custom h1">{t("contact")}</h2>
-            <Form className="p-3 rounded-3">
-              <Form.Group controlId="control-input-1" className="mb-3">
-                <Form.Label>{t("control-input-1-label")}</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="nombre"
-                  placeholder={t("control-input-1-placeholder")}
-                  required
-                />
-              </Form.Group>
-              <Form.Group controlId="control-input-2" className="mb-3">
-                <Form.Label>{t("control-input-2-label")}</Form.Label>
-                <Form.Control
-                  type="email"
-                  name="email"
-                  placeholder={t("control-input-2-placeholder")}
-                  required
-                />
-              </Form.Group>
-              <Row className="mb-3">
-                <Col>
-                  <Form.Group controlId="control-input-3">
-                    <Form.Label>{t("control-input-3-label")}</Form.Label>
-                    <Form.Control
-                      type="text"
-                      name="telefono"
-                      placeholder={t("control-input-3-placeholder")}
-                    />
-                  </Form.Group>
-                </Col>
-                <Col>
-                  <Form.Group controlId="control-input-4">
-                    <Form.Label>{t("control-input-4-label")}</Form.Label>
-                    <Form.Control
-                      type="text"
-                      name="cuit"
-                      placeholder={t("control-input-4-placeholder")}
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-              <Button className="btn-success">{t("submit-text")}</Button>
-            </Form>
+            <ContactForm />
           </Col>
           <Col className="h-100">
             <h2 className="fw-bold text-primary-custom h1">{t("where")}</h2>
-            <div className="iframe-container ratio ratio-16x9">
+            <div className="iframe-container ratio ratio-16x9 h-100">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7950577740926!2d-63.78451752350696!3d-35.68204797258698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c363083c2fb407%3A0x8305d40357268c69!2sTSP%20AGRO%20SA!5e0!3m2!1ses!2sar!4v1785110800036!5m2!1ses!2sar"
-                className="w-100 hmin-40 rounded-3"
+                className="w-100 rounded-3"
               ></iframe>
             </div>
           </Col>

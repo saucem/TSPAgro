@@ -5,11 +5,14 @@
   --light-h: #fefefe;
   --primary: #1a5b56;
   --secondary: #80e69e;
+  --primary-rgb: 26, 91, 86;
+  --secondary-rgb: 128, 230, 158;
 
   --bs-body-color: var(--dark);
   --text: var(--dark);
   --text-h: var(--dark-h);
   --text-heading: var(--primary);
+  --focus-ring: var(--primary-rgb);
   --bs-body-bg: var(--light);
   --bs-navbar-brand-color: var(--dark);
   --bs-nabvar-color: var(--primary);
@@ -44,6 +47,7 @@
     --text: var(--light);
     --text-h: var(--light-h);
     --text-heading: var(--secondary);
+    --focus-ring: var(--secondary-rgb);
     --bs-body-bg: var(--dark);
     --bs-navbar-brand-color: var(--light);
     --bs-nabvar-color: var(--light);
@@ -87,6 +91,15 @@ p {
 
 form {
   background-color: var(--bs-gray-200);
+}
+
+.form-control{
+  color: var(--dark) !important;
+  background-color: var(--light) !important;
+  &:focus{
+    border-color: var(--text-heading);
+    box-shadow: 0 0 0 .25rem rgba(var(--focus-ring), .25);
+  }
 }
 
 .montserrat {
@@ -204,9 +217,9 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
   overflow: hidden;
   & img {
+    border-radius: 0.5rem;
     object-fit: cover;
     width: 100%;
   }
@@ -241,6 +254,9 @@ form {
     width: 75%;
     max-width: 300px;
   }
+  .ratio-16x9{
+    --bs-aspect-ratio: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -261,7 +277,7 @@ form {
   }
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1921px) {
   .above-fold {
     min-height: 45dvh;
   }

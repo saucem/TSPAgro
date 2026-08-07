@@ -34,6 +34,9 @@
   "service-1-heading": "Servicios industriales / Fasón",
   "service-2-heading": "Elaboración de subproductos",
   "service-3-heading": "Coordinación operativa",
+  "service-4-heading": "Acopio de cereales y oleaginosas",
+  "service-5-heading": "Comercio exterior",
+  "service-6-heading": "Canje de insumos",
   "service-1-description": "Según disponibilidad operativa",
   "service-2-description": "Expulsor / Pellet",
   "service-3-description": "Planificación y organización",  
@@ -64,6 +67,9 @@
   "control-input-4-placeholder": "Sin guiones",
 
   "submit-text": "Quiero que me contacten",
+
+  "send-success": "Mensaje enviado con éxito",
+  "send-error": "Ocurrió un error al enviar el mensaje",
 
   "designer-text": "Diseño"
 
